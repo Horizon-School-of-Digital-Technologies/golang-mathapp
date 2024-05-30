@@ -1,8 +1,4 @@
-# Example Dockerized Go Application
-
-[![Build Status](https://semaphore-demos.semaphoreci.com/badges/golang-mathapp/branches/main.svg?key=3c5ab555-0c9b-44df-806e-cacc1b5b416b)](https://semaphore-demos.semaphoreci.com/projects/golang-mathapp)
-
-An example demo project for [How To Deploy a Go Web Application with Docker](https://semaphoreci.com/community/tutorials/how-to-deploy-a-go-web-application-with-docker)
+# MATH APP
 
 ## Docker Images
 
@@ -15,11 +11,12 @@ $ docker build -t mathapp-development .
 Run container:
 
 ```bash
-$ docker run -it --rm \
+$ docker run -it \
     -p 8010:8010 \
-    -v $PWD/src:/go/src/mathapp \
     mathapp-development
 ```
+
+Access the application at your "http://localhost:8010/sum/4/5"
 
 ## License
 
@@ -44,5 +41,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
